@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 
 /* this class will help us run our tests without running them in feature files
-
+    Cucumber options will allow us to locate where our files are located and indicate which tag will it run
 */
 @RunWith(Cucumber.class)
 @CucumberOptions(
