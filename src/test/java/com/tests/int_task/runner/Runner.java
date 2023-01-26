@@ -10,11 +10,11 @@ import org.junit.runner.RunWith;
 */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/HeroKaupp/MainPageScenario.feature",
-        glue = "com/tests/int_task/step_definition",
-        dryRun = false,
-        tags = "@test1",
-        plugin = {"pretty","html:target/uiReport.html","rerun:target/uiFailedTests.txt"}
+        features = "src/test/resources/HeroKaupp/MainPageScenario.feature", // location to feature files that written in Gherkin Language
+        glue = "com/tests/int_task/step_definition", // location of stepDef class where actually our validations take place
+        dryRun = false, // make it true to get empty snippets
+        tags = "@test1", // tag to indicate with scenario to run
+        plugin = {"pretty","html:target/uiReport.html","rerun:target/uiFailedTests.txt"} // these are for test result purposes. It will generate html report
 )
 public class Runner {
 

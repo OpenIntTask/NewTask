@@ -9,6 +9,9 @@ import utils.DriverHelper;
 
 public class Hook {
 
+
+    //Normally this class is used to run before action takes place and after. But in this case driver.get is not functional probably due to dependency issues
+
      WebDriver driver = DriverHelper.getDriver();
 
     @Before

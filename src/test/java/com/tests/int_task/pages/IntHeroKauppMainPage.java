@@ -18,6 +18,12 @@ public class IntHeroKauppMainPage {
     @FindBy(xpath = "//a")
     List<WebElement> allElements;
 
+    /* This method traverses through all webElements and validates that all elements are displayed.
+
+    Looping through because we're storing all webElements in a List and size of the loop is allElements.size
+
+    Assert.assertTrue is used for validation as per requirement, and it is provided from JUnit
+    */
     public void validateElements(){
 
         for (int i = 1; i < allElements.size()-1; i++) {

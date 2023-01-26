@@ -17,8 +17,7 @@ public class DriverHelper {
 
     //private constructor
     private DriverHelper(){}// you can make the constructor private since you do not want to
-    // create an object from this class. One of the great ways of Encapsulation.
-
+    // create an object from this class.
     public static WebDriver getDriver(){
         if (driver==null || ((RemoteWebDriver)driver).getSessionId()==null){
            // String browser = "chrome";

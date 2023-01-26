@@ -11,6 +11,11 @@ import utils.DriverHelper;
 
 public class StepDef {
 
+
+    /*
+    DriverHelper is used as a reusable method from Singleton Patter Design to encapsulate
+    my driver so that no one can create object from that class
+     */
     WebDriver driver = DriverHelper.getDriver();
 
     IntHeroKauppMainPage mainPage = new IntHeroKauppMainPage(driver);
